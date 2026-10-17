@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeFlow - OSTATECZNY KWANTOWY NEURONOWY AI SLOP PLAYER 8K 240FPS</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - 3 niepasujące do siebie fonty dla maksymalnego chaosu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Comic+Neue:ital,wght@1,700&family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        orbitron: ['Orbitron', 'sans-serif'],
+                        comic: ['Comic Neue', 'cursive'],
+                        cinzel: ['Cinzel', 'serif'],
+                        space: ['Space Grotesk', 'sans-serif']
+                    },
+                    colors: {
+                        slopPink: '#ff007f',
+                        slopCyan: '#00f3ff',
+                        slopGreen: '#39ff14',
+                        slopPurple: '#7b2cbf'
+                    },
+                    animation: {
+                        'spin-slow': 'spin 8s linear infinite',
+                        'bounce-fast': 'bounce 0.4s infinite',
+                        'pulse-crazy': 'pulse 0.2s infinite'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Dodatkowe kiczowate efekty CSS */
+        .neon-glow-pink {
+            text-shadow: 0 0 5px #ff007f, 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 40px #ff007f;
+        }
+        .neon-glow-cyan {
+            text-shadow: 0 0 5px #00f3ff, 0 0 10px #00f3ff, 0 0 20px #00f3ff, 0 0 40px #00f3ff;
+        }
+        .neon-box {
+            box-shadow: 0 0 15px #ff007f, inset 0 0 15px #00f3ff;
+        }
+        .border-gradient {
+            border-image: linear-gradient(to right, #ff007f, #00f3ff, #39ff14) 1;
+        }
+        .scanline {
+            background: linear-gradient(
+                to bottom,
+                rgba(255,255,255,0),
+                rgba(255,255,255,0) 50%,
+                rgba(0, 0, 0, 0.4) 50%,
+                rgba(0, 0, 0, 0.4)
+            );
+            background-size: 100% 4px;
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-100 font-space overflow-x-hidden selection:bg-slopPink selection:text-slopGreen">
+
+    <!-- Efekt pływających drobinek / kiczowatego tła -->
+    <div class="fixed inset-0 pointer-events-none opacity-30 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slopPurple via-black to-black"></div>
+
+    <!-- Pasek Informacyjny na górze z absurdalnym tekstem -->
+    <div class="bg-gradient-to-r from-slopPink via-slopPurple to-slopCyan text-black font-orbitron font-extrabold text-xs py-1.5 px-4 text-center tracking-widest uppercase animate-pulse flex justify-around items-center overflow-hidden whitespace-nowrap">
+        <span>🔥 SYNERGIA KWANTOWEGO ODTWARZANIA ANIME 8K HYPER-AI 🔥</span>
+        <span class="hidden md:inline">⚡ TWOJE DOŚWIADCZENIE ISEKAI ZOPTYMALIZOWANE PRZEZ NEURONOWE ALGORYTMY ⚡</span>
+        <span>🚀 POZIOM SLOPU: OVER 9000 🚀</span>
+    </div>
+
+    <!-- Nawigacja -->
+    <nav class="border-b-4 border-slopCyan bg-black/80 backdrop-blur-md sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-slopPink to-slopGreen animate-spin-slow flex items-center justify-center font-cinzel text-2xl font-black text-black">
+                🤖
+            </div>
+            <h1 class="font-orbitron font-black text-2xl md:text-3xl bg-gradient-to-r from-slopPink via-slopCyan to-slopGreen bg-clip-text text-transparent italic tracking-tighter">
+                AnimeFlow <span class="text-xs font-comic text-slopGreen border-2 border-slopGreen px-2 py-0.5 rounded-full rotate-12 inline-block">AI SLOP EDITION v9.9</span>
+            </h1>
+        </div>
+        <div class="hidden lg:flex items-center gap-6 font-cinzel font-bold text-sm">
+            <a href="#" class="hover:text-slopPink transition-colors neon-glow-cyan">Kwantowy Seans</a>
+            <a href="#" class="hover:text-slopCyan transition-colors">Synergia Multiwersum</a>
+            <a href="#" class="hover:text-slopGreen transition-colors">Dłonie z 7 Palcami</a>
+        </div>
+        <button onclick="triggerAIUpgrade()" class="font-comic font-bold text-black bg-slopGreen hover:bg-slopCyan hover:scale-110 px-5 py-2 rounded-xl border-2 border-white shadow-[0_0_15px_#39ff14] transition-all transform active:scale-95">
+            ⚡ ZOPTYMALIZUJ MÓZG AI ⚡
+        </button>
+    </nav>
+
+    <!-- Główny Kontener -->
+    <main class="max-w-7xl mx-auto px-4 py-8 relative z-10">
+
+        <!-- Nagłówek Tytułowy w stylu AI Bełkotu -->
+        <header class="text-center mb-10">
+            <span class="font-comic text-slopPink text-xl font-bold uppercase tracking-widest bg-slopPurple/30 px-4 py-1 rounded-full border border-slopPink">
+                Współczesna Bezprecedensowa Wielowymiarowość Odtwarzania
+            </span>
+            <h2 class="font-cinzel text-4xl md:text-6xl font-black text-white mt-4 mb-3 neon-glow-pink">
+                OVERLORD OF THE CYBER ISEKAI: ULTIMATE GENERATION
+            </h2>
+            <p class="font-space text-gray-300 max-w-3xl mx-auto text-sm md:text-base leading-relaxed border-l-4 border-slopCyan pl-4 py-1 italic bg-gray-900/50">
+                "Współczesna synergia cyfrowego kosmosu oferuje bezprecedensowe możliwości dynamicznego rozwijania Twojego potencjału oglądania. Neuronowe procesory przetwarzają każdy piksel w ostateczny szczyt perfekcji." — <span class="text-slopCyan font-bold">Generatywny Byt v4.5</span>
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+            <!-- SEKCJA ODTWARZACZA (2 kolumny na dużych ekranach) -->
+            <div class="lg:col-span-2 space-y-6">
+                
+                <!-- Ekran Odtwarzacza -->
+                <div id="playerContainer" class="relative bg-gray-950 rounded-3xl overflow-hidden border-4 border-slopPink shadow-[0_0_30px_rgba(255,0,127,0.5)] group">
+                    
+                    <!-- Nakładka Scanline i Zakłóceń -->
+                    <div class="absolute inset-0 scanline pointer-events-none z-20 opacity-40"></div>
+                    
+                    <!-- Zabezpieczenie przed podglądem / Sztuczne Wideo -->
+                    <div class="relative aspect-video w-full bg-slate-900 flex flex-col items-center justify-center p-6 text-center overflow-hidden">
+                        
+                        <!-- Pseudo Tło Wideo (Neonowe Kształty) -->
+                        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_50%_50%,_var(--tw-gradient-stops))] from-slopPink via-slopCyan to-black animate-pulse"></div>
+                        
+                        <!-- Generowane Klatki / Animowany Kicz -->
+                        <div id="videoGlitchText" class="relative z-10 font-orbitron text-center">
+                            <div class="w-24 h-24 mx-auto mb-4 border-8 border-t-slopPink border-r-slopCyan border-b-slopGreen border-l-slopPurple rounded-full animate-spin flex items-center justify-center">
+                                <span class="font-comic text-2xl">🤖</span>
+                            </div>
+                            <p class="text-slopCyan font-bold text-xl md:text-2xl tracking-widest animate-bounce">
+                                GENEROWANIE KLATEK 240 FPS W CZASIE RZECZYWISTYM...
+                            </p>
+                            <p class="font-comic text-slopGreen text-sm mt-2">
+                                [Algorytm podkręca kolory i dodaje niepotrzebną poświatę]
+                            </p>
+                            <div class="mt-4 bg-black/80 border border-slopPink p-3 rounded-lg text-xs font-mono text-gray-400 max-w-md mx-auto">
+                                STATUS NEURONOWY: <span id="fpsCounter" class="text-slopGreen font-bold">239.9 FPS</span> | PALCE MC: <span class="text-slopPink font-bold">7 / 10</span> | PROCESOR: <span class="text-slopCyan font-bold">999%</span>
+                            </div>
+                        </div>
+
+                        <!-- Sztuczny Wodnik / Watermark AI -->
+                        <div class="absolute bottom-4 right-4 z-30 font-orbitron text-[10px] text-gray-500 bg-black/70 px-2 py-1 rounded border border-gray-700">
+                            GENERATED BY AI SLOP ENGINE v9.0 • DO NOT TRUST THE FINGERS
+                        </div>
+                    </div>
+
+                    <!-- Pasek Postępu i Kontrolki -->
+                    <div class="bg-gray-900 p-4 border-t-2 border-slopCyan flex flex-col gap-3 relative z-30">
+                        
+                        <!-- Pasek Postępu z Płomieniami -->
+                        <div class="w-full bg-gray-800 rounded-full h-4 overflow-hidden p-0.5 border border-slopPink relative cursor-pointer" onclick="updateProgress(event)">
+                            <div id="progressBar" class="bg-gradient-to-r from-slopPink via-slopCyan to-slopGreen h-full rounded-full transition-all duration-300 w-3/4 relative">
+                                <div class="absolute right-0 top-0 bottom-0 w-2 bg-white animate-ping"></div>
+                            </div>
+                        </div>
+
+                        <!-- Przyciski Sterowania -->
+                        <div class="flex flex-wrap items-center justify-between gap-4 font-orbitron text-xs">
+                            <div class="flex items-center gap-2">
+                                <button onclick="togglePlay()" id="playBtn" class="bg-slopPink hover:bg-slopPurple text-white px-4 py-2 rounded-lg font-bold shadow-[0_0_10px_#ff007f] transition-all">
+                                    ⏸ PAUZA KWANTOWA
+                                </button>
+                                <button onclick="boostFPS()" class="bg-slopCyan text-black px-3 py-2 rounded-lg font-bold hover:bg-white transition-all">
+                                    🚀 TURBO 8K
+                                </button>
+                            </div>
+                            <div class="flex items-center gap-4 text-slopGreen font-bold">
+                                <span>ODCINEK: 999/∞</span>
+                                <span class="text-slopPink">JAKOŚĆ: BEZDYSSKUSYJNA (SLOP-HD)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Przycisk Ostatecznej Mądrości -->
+                <button onclick="triggerWisdom()" class="w-full py-5 bg-gradient-to-r from-slopPink via-slopPurple to-slopCyan text-black font-cinzel font-black text-xl md:text-2xl rounded-2xl border-4 border-white shadow-[0_0_25px_#ff007f] hover:scale-[1.02] active:scale-95 transition-all uppercase tracking-wider">
+                    ✨ ZOBACZ OSTATECZNĄ MĄDROŚĆ ISEKAI ✨
+                </button>
+
+                <!-- Informacje o Odcinku w stylu Bełkotu Marketingowego -->
+                <div class="bg-gray-900/90 border-2 border-slopPurple rounded-2xl p-6 shadow-lg">
+                    <h3 class="font-orbitron text-xl font-bold text-slopCyan mb-2">
+                        Opis Epizodu: "Ostateczne Starcie Synaps w Multiverse 9"
+                    </h3>
+                    <p class="font-space text-gray-300 text-sm leading-relaxed mb-4">
+                        W tym bezprecedensowym epizodzie, Główny Bohater (Overpowered MC) aktywuje swój neuronowy potencjał cyfrowego kosmosu, aby pokonać ostateczny syndykat niemożliwości. Zoptymalizowana synergia energii 8K ujawnia, że jego lewa dłoń posiada teraz 7 sprawnych biologicznie palców.
+                    </p>
+                    <div class="flex flex-wrap gap-2 font-comic text-xs">
+                        <span class="bg-slopPink/20 text-slopPink border border-slopPink px-3 py-1 rounded-full">#SynergiaKwantowa</span>
+                        <span class="bg-slopCyan/20 text-slopCyan border border-slopCyan px-3 py-1 rounded-full">#IsekaiSlop</span>
+                        <span class="bg-slopGreen/20 text-slopGreen border border-slopGreen px-3 py-1 rounded-full">#UnrealEngine7</span>
+                        <span class="bg-purple-900/50 text-purple-300 border border-purple-500 px-3 py-1 rounded-full">#7PalcówUHand</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SEKCJA BOCZNA: PANEL KONTROLI AI SLOPU -->
+            <div class="space-y-6">
+                
+                <!-- Panel Absurdalnych Suwaków -->
+                <div class="bg-gray-900 border-4 border-slopGreen rounded-3xl p-6 shadow-[0_0_20px_rgba(57,255,20,0.3)] space-y-6">
+                    <div class="border-b-2 border-slopGreen pb-3">
+                        <h3 class="font-orbitron font-black text-xl text-slopGreen flex items-center gap-2">
+                            <span>⚙️</span> PANEL KONTROLI AI
+                        </h3>
+                        <p class="font-comic text-xs text-gray-400">Dostosuj poziom sztuczności w czasie rzeczywistym</p>
+                    </div>
+
+                    <!-- Suwak 1 -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between font-space text-xs">
+                            <span class="text-gray-300">Moc Overpowered MC:</span>
+                            <span id="mcPowerVal" class="text-slopPink font-bold font-mono">9999%</span>
+                        </div>
+                        <input type="range" min="100" max="99999" value="9999" class="w-full accent-slopPink cursor-pointer" oninput="document.getElementById('mcPowerVal').innerText = this.value + '%'">
+                    </div>
+
+                    <!-- Suwak 2 -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between font-space text-xs">
+                            <span class="text-gray-300">Poziom Slopu:</span>
+                            <span id="slopLevelVal" class="text-slopCyan font-bold font-mono">OVER 9000</span>
+                        </div>
+                        <input type="range" min="1" max="100" value="90" class="w-full accent-slopCyan cursor-pointer" oninput="document.getElementById('slopLevelVal').innerText = this.value > 80 ? 'OVER 9000' : this.value * 100">
+                    </div>
+
+                    <!-- Suwak 3 -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between font-space text-xs">
+                            <span class="text-gray-300">Ilość wygenerowanych palców:</span>
+                            <span id="fingerVal" class="text-slopGreen font-bold font-mono">7</span>
+                        </div>
+                        <input type="range" min="5" max="12" value="7" class="w-full accent-slopGreen cursor-pointer" oninput="document.getElementById('fingerVal').innerText = this.value">
+                    </div>
+
+                    <!-- Suwak 4 -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between font-space text-xs">
+                            <span class="text-gray-300">Nienaturalny Połysk (Gloss):</span>
+                            <span id="glossVal" class="text-slopPurple font-bold font-mono">MAXIMUM</span>
+                        </div>
+                        <input type="range" min="1" max="10" value="10" class="w-full accent-slopPurple cursor-pointer">
+                    </div>
+
+                    <button onclick="applySlopSettings()" class="w-full py-3 bg-slopGreen text-black font-orbitron font-bold text-xs rounded-xl hover:bg-white transition-all shadow-[0_0_10px_#39ff14]">
+                        PRZELICZ NEURONY
+                    </button>
+                </div>
+
+                <!-- Fake Opinie Cyfrowych Bytów -->
+                <div class="bg-gray-900/80 border-2 border-slopCyan rounded-3xl p-6 space-y-4">
+                    <h3 class="font-cinzel font-bold text-lg text-slopCyan border-b border-gray-800 pb-2">
+                        Opinie Cyfrowych Bytów
+                    </h3>
+
+                    <div class="space-y-3 font-space text-xs">
+                        <!-- Opinia 1 -->
+                        <div class="bg-black/50 p-3 rounded-xl border border-gray-800 flex gap-3 items-start">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex-shrink-0 flex items-center justify-center font-bold text-white text-sm">
+                                JK
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-center">
+                                    <span class="font-bold text-slopPink">Jan Kowalski (Prezes Wszystkiego)</span>
+                                    <span class="text-yellow-400">★★★★★</span>
+                                </div>
+                                <p class="text-gray-400 mt-1 italic">
+                                    "Ta aplikacja zmieniła moje życie. Dzięki synchronizacji 8K myślisz szybciej o 400%."
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Opinia 2 -->
+                        <div class="bg-black/50 p-3 rounded-xl border border-gray-800 flex gap-3 items-start">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-r from-cyan-500 to-green-500 flex-shrink-0 flex items-center justify-center font-bold text-black text-sm">
+                                AI
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-center">
+                                    <span class="font-bold text-slopCyan">Generatywny Byt #882</span>
+                                    <span class="text-yellow-400">★★★★★</span>
+                                </div>
+                                <p class="text-gray-400 mt-1 italic">
+                                    "Jako model językowy uważam, że ta strona oferuje unikalną dynamikę bezprecedensowego szczytu."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Stopka -->
+        <footer class="mt-16 border-t-2 border-slopPink pt-8 text-center font-space text-xs text-gray-500 space-y-3">
+            <p class="text-slopPink font-orbitron">
+                AnimeFlow AI Slop Edition © 2026 • Wszelkie prawa i palce zastrzeżone przez Neuronowy Kosmos.
+            </p>
+            <p class="max-w-xl mx-auto text-[10px] text-gray-600">
+                Strona stworzona w celach czystego shitpostingu i prześmiewczych celów demonstracyjnych. Żaden prawdziwy palec nie ucierpiał podczas generowania tego slopu.
+            </p>
+        </footer>
+
+    </main>
+
+    <!-- Modal z "Ostateczną Mądrością" -->
+    <div id="wisdomModal" class="fixed inset-0 bg-black/90 backdrop-blur-xl z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-gray-900 border-4 border-slopPink rounded-3xl p-8 max-w-lg w-full text-center space-y-6 shadow-[0_0_50px_#ff007f]">
+            <div class="text-6xl animate-bounce">🧠</div>
+            <h3 class="font-cinzel text-2xl font-black text-slopCyan">OSTATECZNA MĄDROŚĆ ISEKAI ZOSTAŁA ODBLOKOWANA!</h3>
+            <p id="wisdomText" class="font-comic text-lg text-slopGreen leading-relaxed bg-black/60 p-4 rounded-xl border border-slopGreen">
+                "Jeśli odrodzisz się w innym świecie jako ciężarówka, pamiętaj, aby zawsze potrącić głównego bohatera na pierwszym skrzyżowaniu."
+            </p>
+            <button onclick="closeWisdom()" class="w-full py-3 bg-slopPink text-white font-orbitron font-bold rounded-xl hover:bg-slopPurple transition-all">
+                ZROZUMIAŁEM (MÓZG ZOPTYMALIZOWANY)
+            </button>
+        </div>
+    </div>
+
+    <!-- Skrypty JavaScript do obsługi interakcji -->
+    <script>
+        let isPlaying = true;
+
+        // Przełączanie odtwarzacza
+        function togglePlay() {
+            const btn = document.getElementById('playBtn');
+            const videoGlitch = document.getElementById('videoGlitchText');
+            
+            isPlaying = !isPlaying;
+            if (isPlaying) {
+                btn.innerText = "⏸ PAUZA KWANTOWA";
+                btn.classList.replace('bg-slopGreen', 'bg-slopPink');
+                videoGlitch.style.opacity = "1";
+            } else {
+                btn.innerText = "▶ WZNOWIENIE NEURONOWE";
+                btn.classList.replace('bg-slopPink', 'bg-slopGreen');
+                videoGlitch.style.opacity = "0.3";
+            }
+        }
+
+        // Aktualizacja paska postępu
+        function updateProgress(event) {
+            const bar = event.currentTarget;
+            const clickPosition = event.clientX - bar.getBoundingClientRect().left;
+            const percentage = (clickPosition / bar.offsetWidth) * 100;
+            document.getElementById('progressBar').style.width = percentage + '%';
+            showToast(`Przesunięto czas do kwantowego punktu: ${Math.round(percentage)}%`);
+        }
+
+        // Zwiekszenie FPS
+        function boostFPS() {
+            const counter = document.getElementById('fpsCounter');
+            const current = parseFloat(counter.innerText);
+            const next = (current + 1000).toFixed(1);
+            counter.innerText = `${next} FPS`;
+            showToast("🚀 Podkręcono FPS do wartości niebezpiecznych dla ludzkiego oka!");
+        }
+
+        // Wyskakujący Toast Notifications
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.className = 'fixed bottom-5 right-5 bg-slopPink text-white font-orbitron text-xs px-6 py-3 rounded-xl border-2 border-white shadow-[0_0_15px_#ff007f] z-50 animate-bounce';
+            toast.innerText = message;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 3000);
+        }
+
+        // Optymalizacja mózgu
+        function triggerAIUpgrade() {
+            showToast("🧠 Pomyślnie wstrzyknięto 400MB dodatkowego slopu do Twojej pamięci RAM!");
+        }
+
+        // Baza losowych tekstów "Mądrości"
+        const wisdoms = [
+            "Główny bohater Isekai ma zawsze rację, nawet gdy jego dłoń ma 8 palców.",
+            "Współczesna synergia cyfrowa wskazuje, że wygenerowany ramen smakuje lepiej w 8K.",
+            "Jeśli opuścisz ten seans, Twój procesor przejdzie w tryb bezdechu kwantowego.",
+            "Najlepsza broń w fantasy to neonowy miecz wyrenderowany przez algorytm z 2026 roku."
+        ];
+
+        function triggerWisdom() {
+            const modal = document.getElementById('wisdomModal');
+            const text = document.getElementById('wisdomText');
+            const randomIndex = Math.floor(Math.random() * wisdoms.length);
+            text.innerText = `"${wisdoms[randomIndex]}"`;
+            modal.classList.remove('hidden');
+        }
+
+        function closeWisdom() {
+            document.getElementById('wisdomModal').classList.add('hidden');
+        }
+
+        function applySlopSettings() {
+            showToast("⚙️ Zaktualizowano parametry Slopu! Wygenerowano dodatkowe palce.");
+        }
+    </script>
+</body>
+</html>
